@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa z najbliższą stacją ładowania</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" >
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" >
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" >
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" >
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" >
+
+    <link rel="stylesheet" href="style.css" >
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/6.5.0/turf.min.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#map-section">Mapa</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Witamy na naszej stronie!</h1>
+        <p>Krótki opis na temat strony lub firmy.</p>
+    </section>
+
+    <section id="about">
+        <h2>O mnie</h2>
+        <p>Tu znajdzie się więcej informacji o tobie lub firmie.</p>
+    </section>
+
+    <section id="map-section">
+        <h2>Nasza mapa</h2>
+        <div id="map"></div>
+    </section>
+
+    <footer id="contact">
+        <h3>Kontakt</h3>
+        <p>Imię i nazwisko: Jan Kowalski</p>
+        <p>Email: jan.kowalski@example.com</p>
+        <p>Telefon: +48 123 456 789</p>
+    </footer>
+
+</body>
+</html>

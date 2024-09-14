@@ -1,0 +1,263 @@
+/* Ogólny reset marginesów i paddingu */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Stylowanie nagłówka i menu */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    color: #f44336;
+    transition: color 0.3s;
+}
+
+/* Sekcje */
+section {
+    padding: 50px 20px;
+    text-align: center;
+    transition: padding 0.3s;
+}
+
+#home {
+    background-color: #f4f4f4;
+}
+
+#about {
+    background-color: #eaeaea;
+}
+
+#map-section {
+    background-color: #ddd;
+}
+
+/* Mapa */
+#map {
+    height: 800px;
+    width: 90%;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+/* Stopka */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Stylowanie kontenerów */
+.filter-container, .legend {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Legenda */
+.legend {
+    padding-top: 3px;
+}
+
+#red, #blue {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#red {
+    background: red;
+}
+
+#blue {
+    background: blue;
+}
+
+/* Przycisk do usuwania trasy */
+#remove-route {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+}
+
+#remove-route:hover {
+    background-color: #d32f2f;
+    transition: background-color 0.3s;
+}
+
+/* Responsive - dla telefonów komórkowych i małych ekranów */
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        background-color: #333;
+    }
+    
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+
+    #map {
+        height: 700px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px 0;
+    }
+
+    #remove-route {
+        padding: 8px 16px;
+        font-size: 10px;
+    }
+
+    .filter-container, .legend {
+        padding: 8px;
+        font-size: 10px;
+    }
+}
+
+/* Responsive - dla tabletów i średnich ekranów */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .menu li {
+        margin: 0 15px;
+    }
+
+    .menu a {
+        font-size: 17px;
+    }
+
+    #map {
+        height: 700px;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+
+    #remove-route {
+        padding: 10px 18px;
+        font-size: 15px;
+    }
+}
+
+/* Responsive - dla laptopów i dużych ekranów */
+@media (min-width: 1025px) {
+    .menu li {
+        margin: 0 30px;
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 60px 50px;
+    }
+
+    #map {
+        height: 700px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+
+    #remove-route {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+/* Responsive - dla ekranów 4K i wyższych rozdzielczości */
+@media (min-width: 2560px) {
+    body {
+        font-size: 20px;
+    }
+
+    .menu a {
+        font-size: 22px;
+    }
+
+    section {
+        padding: 80px 100px;
+    }
+
+    #map {
+        height: 800px; /* Większa wysokość mapy na dużych ekranach */
+    }
+
+    footer {
+        font-size: 18px;
+        padding: 30px 0;
+    }
+
+    #remove-route {
+        padding: 14px 28px;
+        font-size: 18px;
+    }
+
+    .filter-container, .legend {
+        padding: 15px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+        font-size: 18px;
+    }
+
+    #red, #blue {
+        width: 16px;
+        height: 16px;
+    }
+}
