@@ -62,6 +62,7 @@ section {
 
 #map-section {
     background-color: #ddd;
+    text-align: center;
 }
 
 /* Mapa */
@@ -86,7 +87,8 @@ footer {
 }
 
 /* Stylowanie kontenerów */
-.filter-container, .legend {
+.filter-container,
+.legend {
     background-color: white;
     padding: 10px;
     border-radius: 5px;
@@ -98,7 +100,8 @@ footer {
     padding-top: 3px;
 }
 
-#red, #blue {
+#red,
+#blue {
     width: 12px;
     height: 12px;
     display: inline-block;
@@ -137,7 +140,7 @@ footer {
         flex-direction: column;
         background-color: #333;
     }
-    
+
     .menu li {
         margin: 10px 0;
     }
@@ -164,7 +167,8 @@ footer {
         font-size: 10px;
     }
 
-    .filter-container, .legend {
+    .filter-container,
+    .legend {
         padding: 8px;
         font-size: 10px;
     }
@@ -249,7 +253,8 @@ footer {
     }
 
     #map {
-        height: 1000px; /* Większa wysokość mapy na dużych ekranach */
+        height: 1000px;
+        /* Większa wysokość mapy na dużych ekranach */
     }
 
     footer {
@@ -262,13 +267,15 @@ footer {
         font-size: 18px;
     }
 
-    .filter-container, .legend {
+    .filter-container,
+    .legend {
         padding: 15px;
         box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
         font-size: 18px;
     }
 
-    #red, #blue {
+    #red,
+    #blue {
         width: 16px;
         height: 16px;
     }

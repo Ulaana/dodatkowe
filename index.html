@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.5">
     <title>Mapa z najbliższą stacją ładowania</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" >
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" >
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css">
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" >
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" >
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css">
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" >
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="style.css">
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
@@ -27,6 +28,7 @@
 
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -40,29 +42,36 @@
     </header>
 
     <section id="home">
-        <h1>Witam!</h1>
-        <p>Ta strona ma charakter demonstracyjny i została stworzona na potrzeby pracy inżynierskiej.</p><br>
-        <p>Jest to aplikacja internetowa, która ma za zadanie wyznaczyć trasę do najbliższej stacji ładowania samochodów elektrycznych od punktu postawionego przez użytkownika.</p><br>
+        <h1>Witam na stronie!</h1>
+        <p>Ta strona ma charakter demonstracyjny i została stworzona na potrzeby pracy inżynierskiej.</p>
+        <p>Jest to aplikacja internetowa, która ma za zadanie wyznaczyć trasę do najbliższej stacji ładowania samochodów
+            elektrycznych od punktu postawionego przez użytkownika.</p>
         <p>Została ona zaprojektowana przy użyciu Leaflet i dodatkowych bibliotek wspomagających oraz Turf.js</p>
     </section>
 
     <section id="about">
-        <h2>Działanie</h2>
-        <p>Trasa jest wytyczana od punktu, który należy ręcznie postawić na mapie poprzez kliknięcie lewym przyciskiem myszy, bądź palcem.</p><br>
-        <p>Włącz lokalizację, aby strona mogła odczytać twoje położenie i zaznaczyć je na mapie niebieskim okręgiem. Ewentualnie możesz skorzystać z wyszukiwarki w prawym górnym rogu i wpisać swoje współrzędne lub dokładny adres, w którym się znajdujesz.</p><br>
-        <p>W lewym górnym rogu znajduje się filtr typów ładowania</p><br>
-        <p>Gdy klikniesz na jakąkolwiek ze stacji, otrzymasz dokładne informacje na temat typ ładowarek oraz ich mocy.</p>
+        <h2>Działanie mapy</h2>
+        <p>Trasa jest wytyczana od punktu, który należy ręcznie postawić na mapie poprzez kliknięcie lewym przyciskiem
+            myszy, bądź palcem.</p>
+        <p>Włącz lokalizację, aby strona mogła odczytać twoje położenie i zaznaczyć je na mapie niebieskim okręgiem.
+            Ewentualnie możesz skorzystać z wyszukiwarki w prawym górnym rogu i wpisać swoje współrzędne lub dokładny
+            adres, w którym się znajdujesz.</p>
+        <p>W lewym górnym rogu znajduje się filtr typów ładowania.</p>
+        <p>Gdy klikniesz na jakąkolwiek ze stacji, otrzymasz dokładne informacje na temat typ ładowarek oraz ich mocy.
+        </p>
     </section>
 
     <section id="map-section">
+        <h2>Mapa</h2>
         <div id="map"></div>
     </section>
 
     <footer id="contact">
         <h3>Wykonanie oraz dane kontaktowe</h3>
         <p>Imię i nazwisko: Michał Wilkos</p>
-        <p>Email: wilkos5656@gmail.com</p>
+        <p>E-mail: wilkos5656@gmail.com</p>
     </footer>
 
 </body>
+
 </html>
