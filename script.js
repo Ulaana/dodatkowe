@@ -190,7 +190,7 @@ legend.onAdd = function (map) {
     var div = L.DomUtil.create('div', 'legend');
 
     div.innerHTML = `
-        <b>Legenda</b><br>
+        <h3>Legenda</h3>
         <div id="red"></div> Stacja ładowania<br>
         <div id="blue"></div> Punkt użytkownika<br>`;
 
