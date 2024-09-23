@@ -190,7 +190,7 @@ legend.onAdd = function (map) {
     var div = L.DomUtil.create('div', 'legend');
 
     div.innerHTML = `
-        <h3>Legenda</h3>
+        <b>Legenda</b><br>
         <div id="red"></div> Stacja ładowania<br>
         <div id="blue"></div> Punkt użytkownika<br>`;
 
@@ -237,3 +237,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('show');
+}
