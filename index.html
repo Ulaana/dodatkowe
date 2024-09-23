@@ -48,22 +48,41 @@
 
     <section id="home">
         <h1>Witam na stronie!</h1>
-        <p>Ta strona ma charakter demonstracyjny i została stworzona na potrzeby pracy inżynierskiej.</p>
-        <p>Jest to aplikacja internetowa, która ma za zadanie wyznaczyć trasę do najbliższej stacji ładowania samochodów
-            elektrycznych od punktu postawionego przez użytkownika.</p>
-        <p>Została ona zaprojektowana przy użyciu Leaflet i dodatkowych bibliotek wspomagających oraz Turf.js</p>
+        <p>Tytuł pracy inżynierskiej: <strong>"Opracowanie aplikacji webowej wyznaczającej trasę do najbliższej stacji
+                ładowania samochodów elektrycznych"</strong></p>
+        <p>Strona prezentuje aplikację webową stworzoną w ramach pracy inżynierskiej, której celem jest umożliwienie
+            użytkownikom pojazdów elektrycznych szybkie i łatwe znalezienie najbliższej stacji ładowania oraz
+            wyznaczenie do niej trasy. Aplikacja korzysta z mapy, na której użytkownik może kliknąć w dowolne miejsce,
+            aby wybrać punkt początkowy, a system automatycznie wskaże najbliższą stację ładowania oraz wyznaczy do niej
+            optymalną trasę.</p>
+        <p>Strona korzysta z następujących bibliotek:</p>
+        <ul>
+            <li><strong>Leaflet</strong>: do wyświetlania mapy.</li>
+            <li><strong>Leaflet Routing Machine</strong>: do wyznaczania trasy na mapie.</li>
+            <li><strong>Leaflet MarkerCluster</strong>: do grupowania markerów stacji ładowania.</li>
+            <li><strong>Turf.js</strong>: do obliczania odległości i znajdowania najbliższej stacji.</li>
+            <li><strong>Leaflet Control Geocoder</strong>: do wyszukiwania lokalizacji po adresie lub współrzędnych GPS.
+            </li>
+        </ul>
     </section>
 
     <section id="about">
-        <h2>Działanie mapy</h2>
-        <p>1. Trasa jest wytyczana od punktu, który należy ręcznie postawić na mapie poprzez kliknięcie lewym przyciskiem
-            myszy na komputerze, bądź palcem na telefonie lub urządzeniu z ekranem dotykowym.</p>
-        <p>2. Włącz lokalizację, aby strona mogła odczytać twoje położenie i zaznaczyć je na mapie niebieskim okręgiem.
-            Ewentualnie możesz skorzystać z wyszukiwarki w prawym górnym rogu i wpisać swoje współrzędne lub dokładny
-            adres, w którym się znajdujesz.</p>
-        <p>3. W lewym górnym rogu znajduje się filtr typów ładowania.</p>
-        <p>4. Gdy klikniesz na jakąkolwiek ze stacji, otrzymasz dokładne informacje na temat typ ładowarek oraz ich mocy.
-        </p>
+        <h2>Działanie strony</h2>
+        <p>1. <strong>Wybór punktu początkowego trasy</strong>: Kliknij w dowolnym miejscu na mapie (lewym przyciskiem
+            myszy na komputerze lub palcem na urządzeniu dotykowym), aby wybrać punkt startowy. System automatycznie
+            znajdzie najbliższą stację ładowania i wyznaczy trasę.</p>
+        <p>2. <strong>Wyszukiwanie lokalizacji</strong>: Możesz włączyć lokalizację w przeglądarce, aby automatycznie
+            ustalić swoją pozycję. Po włączeniu lokalizacji, twoje miejsce zostanie oznaczone na mapie niebieskim
+            okręgiem. Istnieje również opcja wyszukiwania miejsca za pomocą wyszukiwarki w prawym górnym rogu.</p>
+        <p>3. <strong>Filtr typów ładowania</strong>: W lewym górnym rogu mapy znajduje się filtr umożliwiający wybór
+            preferowanego typu ładowania. Możesz wybrać konkretne typy ładowarek lub wyświetlić wszystkie dostępne.</p>
+        <p>4. <strong>Informacje o stacji ładowania</strong>: Klikając na wybraną stację ładowania, otrzymasz
+            szczegółowe informacje na temat dostępnych typów ładowarek i ich mocy.</p>
+        <p>5. <strong>Legenda mapy</strong>: W prawym dolnym rogu mapy znajduje się legenda, która objaśnia znaczenie
+            użytych ikon. Czerwone markery reprezentują stacje ładowania, a niebieski punkt oznacza lokalizację
+            użytkownika.</p>
+        <p>6. <strong>Wyczyść trasę</strong>: W prawym górnym rogu dostępny jest przycisk umożliwiający wyczyszczenie
+            aktualnie wyznaczonej trasy i rozpoczęcie nowego wyszukiwania.</p>
     </section>
 
     <section id="map-section">
