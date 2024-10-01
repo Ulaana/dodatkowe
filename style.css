@@ -1,4 +1,3 @@
-/* Ogólny reset marginesów i paddingu */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +11,6 @@ body {
     padding: 0;
 }
 
-/* Stylowanie nagłówka i menu */
 header {
     background-color: #333;
     padding: 10px 0;
@@ -62,27 +60,24 @@ header {
     transition: color 0.3s;
 }
 
-/* Sekcje */
 section {
     padding: 30px 10px;
     text-align: justify;
 }
 
-
 #home {
-    background-color: #f4f4f4;
+    background: linear-gradient(to bottom, #ffffff, #cccccc);
 }
 
 #about {
-    background-color: #eaeaea;
+    background: linear-gradient(to bottom, #cccccc, #999999);
 }
 
 #map-section {
-    background-color: #ddd;
+    background: linear-gradient(to bottom, #999999, #666666);
     text-align: center;
 }
 
-/* Mapa */
 #map {
     height: 800px;
     width: 90%;
@@ -103,7 +98,6 @@ footer {
     font-size: 16px;
 }
 
-/* Stylowanie kontenerów */
 .filter-container,
 .legend {
     background-color: white;
@@ -117,7 +111,6 @@ footer {
     flex-direction: column;
 }
 
-/* Legenda */
 .legend {
     padding-top: 3px;
 }
@@ -138,7 +131,6 @@ footer {
     background: blue;
 }
 
-/* Przycisk do usuwania trasy */
 #remove-route {
     background-color: #f44336;
     color: white;
@@ -160,26 +152,25 @@ footer {
     width: 320px;
 }
 
-/* Responsive - dla telefonów komórkowych i małych ekranów */
 @media (max-width: 600px) {
     .menu {
         flex-direction: column;
-        display: none; /* Domyślnie ukryj menu */
+        display: none;
         width: 100%;
         background-color: #333;
     }
 
     .menu.show {
-        display: flex; /* Pokaż menu po kliknięciu */
+        display: flex;
     }
 
     .menu li {
         margin: 10px 0;
-        text-align: center;
+        text-align: left;
     }
 
     .hamburger {
-        display: flex; /* Pokaż hamburger na małych ekranach */
+        display: flex;
     }
 
     .menu a {
@@ -192,7 +183,7 @@ footer {
     }
 
     #map {
-        height: 700px;
+        height: 600px;
         font-size: 10px;
     }
 
@@ -217,7 +208,6 @@ footer {
     }
 }
 
-/* Responsive - dla tabletów i średnich ekranów */
 @media (min-width: 601px) and (max-width: 1024px) {
     .menu li {
         margin: 0 15px;
@@ -228,8 +218,8 @@ footer {
     }
 
     #map {
-        height: 700px;
-        font-size: 10px;
+        height: 600px;
+        font-size: 12px;
     }
 
     #map-section {
@@ -255,7 +245,6 @@ footer {
     }
 }
 
-/* Responsive - dla laptopów i dużych ekranów */
 @media (min-width: 1025px) {
     .menu li {
         margin: 0 30px;
@@ -283,7 +272,6 @@ footer {
     }
 }
 
-/* Responsive - dla ekranów 4K i wyższych rozdzielczości */
 @media (min-width: 2560px) {
     body {
         font-size: 20px;
@@ -299,7 +287,6 @@ footer {
 
     #map {
         height: 1000px;
-        /* Większa wysokość mapy na dużych ekranach */
     }
 
     footer {
