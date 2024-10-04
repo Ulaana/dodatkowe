@@ -13,7 +13,7 @@ const __dirname = path.dirname(__filename);
 // Obsługa plików statycznych z folderu 'public'
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Trasa główna serwująca plik HTML
+// Trasa główna serwująca plik HTMLn
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
