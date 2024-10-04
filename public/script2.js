@@ -30,9 +30,9 @@ filterControl.onAdd = function (map) {
 filterControl.addTo(map);
 
 fetch('/api/data')
-    .then(response => response.json())
-    .then(data => {
-        const { operator, bazy, stacje, punkty, slownik } = data;
+  .then(response => response.json())
+  .then(data => {
+    const { operator, bazy, stacje, punkty, slownik } = data;
 
     const chargingModeMap = slownik.charging_mode.reduce((map, mode) => {
         map[mode.id] = mode.name;
